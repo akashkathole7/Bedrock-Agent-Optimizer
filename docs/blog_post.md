@@ -1,6 +1,6 @@
-# Slashing Latency in Multi-Agent Systems on AWS Bedrock: A Novel Approach
+# Slashing Latency in Multi-Agent Systems on AWS Bedrock: A 30% Improvement Strategy
 
-*A practical guide to reducing end-to-end response times by 30% using Redis caching and predictive agent routing.*
+Building autonomous agents on Bedrock is powerful, but chaining them sequentially kills user experience. Here's how I fixed it.
 
 ---
 
@@ -83,7 +83,7 @@ A few honest caveats:
 
 ## Try It Yourself
 
-The full implementation is open source: [**Bedrock-Agent-Optimizer**](https://github.com/yourusername/Bedrock-Agent-Optimizer)
+I've open-sourced the caching layer and predictive router here: [Bedrock-Agent-Optimizer](https://github.com/akashkathole7/Bedrock-Agent-Optimizer). Feedback and PRs welcome!
 
 It's a drop-in layer — you wrap your existing Bedrock agent calls with the optimizer, point it at a Redis instance, and you're done. The router trains itself from your actual traffic patterns.
 
@@ -94,4 +94,6 @@ python benchmarks/latency_bench.py
 
 ---
 
-*If you're building multi-agent systems on Bedrock and running into latency walls, I'd love to hear what approaches you've tried. Connect with me on LinkedIn or open an issue on the repo.*
+*If you're building multi-agent systems on Bedrock and running into latency walls, I'd love to hear what approaches you've tried. Drop a comment below or open an issue on the repo.*
+
+#AWS #Bedrock #GenerativeAI #LLM #SystemDesign #CloudArchitecture
